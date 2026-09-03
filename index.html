@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fahad Khalid — Web Developer, AI & Automation" />
+  <title>Fahad Khalid — Web · AI · Automation</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/index-mymc8-7j.css" />
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module">
+    import React from "https://esm.sh/react@19.2.0";
+    import { createRoot } from "https://esm.sh/react-dom@19.2.0/client";
+    import * as AppModule from "/assets/index-qk1gotm3.js";
+
+    const App = AppModule.component || AppModule.default || Object.values(AppModule).find(v => typeof v === "function");
+    if (!App) throw new Error("Portfolio component export not found.");
+    createRoot(document.getElementById("root")).render(React.createElement(App));
+  </script>
+</body>
+</html>
