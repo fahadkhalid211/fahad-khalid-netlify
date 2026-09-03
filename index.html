@@ -11,12 +11,10 @@
 <body>
   <div id="root"></div>
   <script type="module">
-    import React from "https://esm.sh/react@19.2.0";
-    import { createRoot } from "https://esm.sh/react-dom@19.2.0/client";
-    import * as AppModule from "/assets/index-qk1gotm3.js";
+    import React from "https://esm.sh/react@19.2.8";
+    import { createRoot } from "https://esm.sh/react-dom@19.2.8/client";
+    import { component as App } from "/assets/index-qk1gotm3.js";
 
-    const App = AppModule.component || AppModule.default || Object.values(AppModule).find(v => typeof v === "function");
-    if (!App) throw new Error("Portfolio component export not found.");
     createRoot(document.getElementById("root")).render(React.createElement(App));
   </script>
 </body>
