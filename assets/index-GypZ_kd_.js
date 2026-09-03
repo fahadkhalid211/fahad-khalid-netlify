@@ -1,1 +1,1 @@
-// Compatibility filename for Netlify/Linux case-sensitive module resolution. The original bundled runtime is stored at assets/index-gypz_kd_.js.
+export * from "./index-gypz_kd_.js";
