@@ -10,6 +10,34 @@
   <link rel="stylesheet" href="/assets/portfolio-animations.css" />
 </head>
 <body>
+  <!-- Static form definition for Netlify Forms detection. The visible form is rendered by React. -->
+  <form name="contact" method="POST" data-netlify="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;">
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="company" />
+    <select name="budget">
+      <option value="">Select budget</option>
+      <option value="Under $500">Under $500</option>
+      <option value="$500–$1,000">$500–$1,000</option>
+      <option value="$1,000–$2,500">$1,000–$2,500</option>
+      <option value="$2,500–$5,000">$2,500–$5,000</option>
+      <option value="$5,000+">$5,000+</option>
+    </select>
+    <select name="projectType">
+      <option value="Website Development">Website Development</option>
+      <option value="WooCommerce">WooCommerce</option>
+      <option value="WordPress">WordPress</option>
+      <option value="AI Chatbot">AI Chatbot</option>
+      <option value="Automation">Automation</option>
+      <option value="API Integration">API Integration</option>
+      <option value="Performance Optimisation">Performance Optimisation</option>
+      <option value="Other">Other</option>
+    </select>
+    <textarea name="message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
   <div id="root"></div>
   <script type="module">
     import React from "https://esm.sh/react@19.2.8";
